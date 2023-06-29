@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product 1 - My E-commerce Store</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+        <h1>My E-commerce Store</h1>
+    </div>
+    <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+    </button>
+    <nav class="nav">
+        <ul class="nav__list">
+            <li><a href="./index.html" class="nav__link">Home</a></li>
+            <li><a href="./index.html" class="nav__link">Products</a></li>
+            <li><a href="./assets/cart/cart.html" class="nav__link">Cart</a></li>
+        </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <section id="product">
+      <h2>Product 1</h2>
+      <div class="product-image">
+        <img src="product1.jpg" alt="Product 1">
+      </div>
+      <div class="product-details">
+        <p>Description: This is Product 1.</p>
+        <button onclick="addToCart('Product 1', 10.99)">Add to Cart</button>
+      </div>
+    </section>
+  </main>
+  
+  <footer>
+    <p>&copy; 2023 My E-commerce Store. All rights reserved.</p>
+  </footer>
+
+  <script src="/index.js"></script>
+</body>
+</html>

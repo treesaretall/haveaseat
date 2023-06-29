@@ -1,0 +1,49 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My E-commerce Store</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+  </head>
+  <body>
+      <header>
+          <div class="logo">
+              <h1>Living Room</h1>
+          </div>
+          <button class="nav-toggle" aria-label="toggle navigation">
+              <span class="hamburger"></span>
+          </button>
+          <nav class="nav">
+              <ul class="nav__list">
+                  <li><a href="./index.html" class="nav__link">Home</a></li>
+                  <li><a href="./index.html" class="nav__link">Products</a></li>
+                  <li><a href="./assets/cart/cart.html" class="nav__link">Cart</a></li>
+              </ul>
+          </nav>
+      </header>
+      
+      <main>
+        <section id="products">
+          <a href="./assets/products/product1.html" class="product">
+            <button onclick="addToCart('Product 1', 10.99)">Add to Cart</button>
+            <img src="product1.jpg" href="./assets/products/product1.html" alt="Product 1">
+            <h3>Product 1</h3>
+            <p>Price: $10.99</p>
+          </a>
+          <div class="product">
+            <button onclick="addToCart('Product 2', 15.99)">Add to Cart</button>
+            <img src="product2.jpg" alt="Product 2">
+            <h3>Product 2</h3>
+            <p>Price: $15.99</p>
+          </div>
+          <!-- Add more product listings here -->
+        </section>
+      </main>
+      
+      <footer>
+        <p>&copy; 2023 My E-commerce Store. All rights reserved.</p>
+        <p>Cart Total: $<span id="cart-total">0.00</span></p>
+      </footer>
+      <script src="/index.js"></script>
+  </body>
+  </html>
+  
