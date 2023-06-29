@@ -1,0 +1,47 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Have A Seat-Bedroom</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+  </head>
+  <body>
+      <header>
+          <div class="logo">
+              <h1>Bedroom</h1>
+          </div>
+          <button class="nav-toggle" aria-label="toggle navigation">
+              <span class="hamburger"></span>
+          </button>
+          <nav class="nav">
+              <ul class="nav__list">
+                <li><a href="/index.html" class="nav__link">Home</a></li>
+                <li><a href="/index.html" class="nav__link">Products</a></li>
+                <li><a href="/assets/cart/cart.html" class="nav__link">Cart</a></li>
+              </ul>
+          </nav>
+      </header>
+      
+      <main>
+        <section id="products">
+          <a href="./furniture/masimobedgray.html" class="product">
+            <section id="product">
+              <h2>Massimo Bed Gray</h2>
+              <div class="product-image">
+                <img src="/assets/img/" alt="Product 1">
+              </div>
+              <div class="product-details">
+                <p>Price: $1,199</p>
+                <button onclick="addToCart('Product 1', 1199.00)">Add to Cart</button>
+          </a>
+          
+        </section>
+      </main>
+      
+      <footer>
+        <p>&copy; 2023 My E-commerce Store. All rights reserved.</p>
+        <p>Cart Total: $<span id="cart-total">0.00</span></p>
+      </footer>
+      <script src="/index.js"></script>
+  </body>
+  </html>
+  
